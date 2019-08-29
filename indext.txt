@@ -1,1 +1,9 @@
-I am new graduate student at Northwest Missouri state university
+I am a new Graduate student at North West Missouri State University enrolled for fall 2019 and My Major is Computer Science.
+
+I am from Andhra Pradesh in India and I did My Bachelor Degree in SSN Engineering College from Ongole,  Andhra Pradesh. I have 4 Years of experience in Embedded System background. I worked as a System Engineer at Caravel Info System for about 2.5 years and completed two projects (Video Annotation and Time Stamping System and PCM Encoder system used for military purpose). Later, I worked in HCL as a Lead Engineer for about 1.5 Years. In HCL, I used to develop embedded c code for REU (Remote Electronic Unit). REU is avionics Project. I used to participate in cultural activities in my college and offices.
+
+Currently I am thinking to go embedded systems side. In the process of completing my graduate studies if I find anything interesting I might move to other technology.
+
+Here are the my GitHub profile.
+
+https://github.com/pinky407
