@@ -16,7 +16,7 @@
    - [Visual Studio code](https://visualstudio.microsoft.com/)
    - [Git Bash](https://git-scm.com/downloads)
   
-   Markdown language is used for github Pages. Markdown is supports HTML
+   Markdown language is used for github Pages. Markdown supports HTML
    
 ## Recommended Resources
   Here are some resources for web Development
