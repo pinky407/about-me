@@ -4,7 +4,7 @@
   - [source repository](https://github.com/pinky407/about-me)
   - [hosted page](https://pinky407.github.io/about-me/)
   
-## about
+## About
 This repo is describing about what tools and laguages are used for to publish a repo with Github pages and providing some resources for web development.
 
 ## Recommended Tools 
@@ -17,3 +17,11 @@ If you want to do it in your local machine you need to have visual studio code a
   - [Git Bash](https://git-scm.com/downloads)
   
    Markdown language is used for github Pages. Markdown is supports HTML
+   
+## Recommended Resources
+Here are some resources for web Development
+  -[Bootstrap](https://getbootstrap.com/)
+  -[Foundation](https://foundation.zurb.com/)
+  -[Semantic UI](https://semantic-ui.com/)
+  -[uikit](https://getuikit.com)
+## Contribution
