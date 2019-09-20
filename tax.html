@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+
+ 
+font-family: Arial;
+padding: 10px;
+background-image: url("background.png");
+
+}
+
+img {
+  border-radius: 50%;
+
+}
+/* Header/Blog Title */
+.header {
+padding: 60px;
+
+}
+.header img {
+float: left;
+width: 100px;
+height: 100px;
+background: #555;
+}
+
+.header h1 {
+  text-align: center;
+  font-size: 50px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color:rgb(38, 30, 44);
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 12px 14px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.btn{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    
+}
+.btn:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid #4CAF50;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: rgb(38, 30, 44);
+  padding: 9px;
+  box-sizing:unset;
+  width:50%;
+  height: 50%;
+  float: center;
+  margin-top: 40px;
+  color: white;
+}
+
+
+
+
+.footer {
+  padding: 10px;
+  text-align: left;
+  margin-top: 20px;
+  text-size-adjust: 1;
+}
+</style>
+</head>
+<body>
+
+        <div class="header">
+                
+                <h1>Contact Us</h1>
+              </div>
+            
+            <div class="topnav">
+              <a href="index.html">Home</a>
+              <a href="contact.html">Contact</a>
+              <a href="age.html">Age</a>
+            </div>
+
+          <div class = "container">
+            <h1><cenrter>Age Calculator</cenrter></h1>
+            Date Of Birth: 
+            <input type="date" id="birth_date">
+            <input class="btn" type="button" value="Calculate Age" onclick="ageCalculate()">
+            <br/><br/>
+            Age: 
+            <br/>
+            <br/>
+            <div id="age"></div>
+            
+    <p id="demo"></p>
+
+</div>
+<div class="footer">
+        <h2>priyanka Bodapati</h2>
+      </div>
+
+</body>
+</html>
+
+<script>
+function ageCalculate(){
+    //document.getElementById('age').InnerHtml
+  // document.getElementById("demo").InnerHtml=4+5;
+   //document.write="Hi";
+   var birthDate =document.getElementById('birth_date').value;
+
+//if(birthDate==""){
+  //  alert("Choose correct birthdate.")
+//}else{
+  //  alert(birthDate);
+  //  alert(Date());
+    var d = new Date(birthDate);
+
+   // document.getElementById("age").innerHTML = d;
+
+//}
+
+        var mdate = birthDate.toString();
+        var yearThen = parseInt(mdate.substring(0,4), 10);
+        var monthThen = parseInt(mdate.substring(5,7), 10);
+        var dayThen = parseInt(mdate.substring(8,10), 10);
+        
+        var today = new Date();
+        var birthday = new Date(yearThen, monthThen-1, dayThen);
+     //   alert(today.valueOf() + " " + birthday.valueOf());
+        var differenceInMilisecond = today.valueOf() - birthday.valueOf();
+      //  alert(differenceInMilisecond);
+        
+        var year_age = Math.floor(differenceInMilisecond / 31536000000);
+        var day_age = Math.floor((differenceInMilisecond % 31536000000) / 86400000);
+        
+        if ((today.getMonth() == birthday.getMonth()) && (today.getDate() == birthday.getDate())) {
+            alert("Happy B'day!!!");
+        }
+        
+        var month_age = Math.floor(day_age/30);
+        
+        day_age = day_age % 30;
+        
+        var tMnt= (month_age + (year_age*12));
+        var tDays =(tMnt*30) + day_age;
+        
+        if (isNaN(year_age) || isNaN(month_age) || isNaN(day_age)) {
+            document.getElementById("age").innerHTML = ("Invalid birthday - Please try again!");
+        }
+        else {
+            document.getElementById("age").innerHTML = year_age + " years " + month_age + " months " + day_age + " days"
+            + "<br/> or <br/> " 
+            + tMnt + " months " + day_age + " days" 
+            + "<br/> or <br/>" 
+            +  tDays + " days" 
+            + "<br/> or <br/>" 
+            +  tDays*24 + " hours" 
+            + "<br/> or <br/>" 
+            +  tDays*24*3600 + " seconds" 
+            + "<br/> or <br/>" 
+            +  tDays*24*3600*1000 + " miliseconds" ;
+        }
+
+}
+
+</script>

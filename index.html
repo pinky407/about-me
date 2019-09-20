@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>About Me</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+
+ 
+  font-family: Arial;
+  padding: 10px;
+  background-image: url("background.png");
+  
+}
+
+img {
+    border-radius: 50%;
+  
+}
+/* Header/Blog Title */
+.header {
+  padding: 60px;
+  
+}
+.header img {
+  float: left;
+  width: 100px;
+  height: 100px;
+  background: #555;
+}
+
+.header h1 {
+  text-align: center;
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color:rgb(38, 30, 44);
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 65%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 35%;
+  
+  padding-left: 40px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color:rgb(38, 30, 44);
+  padding: 40px;
+  margin-top: 40px;
+  color: white;
+  
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+  text-align: left;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: rgb(187, 50, 50);
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.mySlides {display:none;}
+/* Footer */
+.footer {
+  padding: 10px;
+  text-align: left;
+  margin-top: 20px;
+  text-size-adjust: 1;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+    
+    <h1>About Me</h1>
+  </div>
+
+<div class="topnav">
+  <a href="#">Home</a>
+  <a href="contact.html">Contact</a>
+  <a href="age.html">Age</a>
+</div>
+
+<h2 class="w3-center">Automatic Slideshow</h2>
+
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="Nature.jpg" style="width:100%">
+  <img class="mySlides" src="Nature1.jpg" style="width:100%">
+  <img class="mySlides" src="Nature2.jpg" style="width:100%">
+</div>
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Current</h2>
+        <p>  My name is Priyanka Bodapati and i am new graduate student at Northwest Missouri State University pursuing Master's in Applied Computer Science</p>
+    </div>
+    <div class="card">
+      <h2>Background</h2>
+      <h4>Educational</h4>
+        <p> I did My Bachelor Degree in SSN Engineering College in the straem of Electronics and Communication Engineering </p>
+      <hr> 
+      <h4>Industrial</h4>    
+          <p> I have 4 Years of experience in Embedded System background. I worked as a System Engineer 
+            at Caravel Info System for about 2.5 years and completed two projects (Video Annotation and Time Stamping System 
+            and PCM Encoder system used for military purpose). <br>Later, I worked in HCL as a Lead Engineer for about 1.5 Years. 
+            In HCL, I used to develop embedded c code for REU (Remote Electronic Unit). REU is avionics Project. 
+            I used to participate in cultural activities in my college and offices.
+        </p>
+        <table style="width:100%">
+            
+            <tr>
+              <th>Company Name</th>
+              <th>Role</th>
+              <th>Period</th>
+            </tr>
+            <tr>
+              <td>Cranes Varsity</td>
+              <td>Trainee</td>
+              <td>06/13-01/14</td>
+            </tr>
+            <tr>
+                <td>Caravel Info System</td>
+                <td>System Engineer</td>
+                <td>02/14-09/16</td>
+            </tr>
+            <tr>
+                <td>HCL</td>
+                <td>Lead Engineer</td>
+                <td>10/16-11/17</td>
+            </tr>
+          </table>
+    </div>
+
+    <div class="card">
+        <h2>Future</h2>
+          <p>  Currently I am thinking to go embedded systems side. In the process of completing my graduate studies if I find anything interesting I might move to other technology.</p>
+    </div>
+
+    <div class="card">
+        <h2>Skills</h2>
+        <ul>
+            <li>Embedded C Programming</li>
+            <li>Hardware Design</li>
+            <li>C Programming</li>
+            <li>basics of Java</li>
+            <li>basics of python</li>
+        </ul>
+      </div>
+  </div>
+  <div class="rightcolumn">
+  
+    <div class="card">
+      <h3>NW Video</h3>
+      <iframe width="350" height="350" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+      </iframe>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <ol>
+        <li><a href="https://www.facebook.com/priyanka.bodapati?ref=bookmarks" class="fa fa-facebook"></a></li> 
+        <li><a href="https://github.com/" class="fa fa-github-square"></a><i style="font-size:60px"></i></li> 
+        <li><a href="https://www.linkedin.com/feed/" class="fa fa-linkedin"></a></li> 
+    </ol>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="footer">
+  <h2>Priyanka Bodapati</h2>
+</div>
+
+
+<script>
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+    </script>
+</body>
+</html>
