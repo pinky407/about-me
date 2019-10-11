@@ -113,9 +113,10 @@ background: #555;
             <div class="topnav">
               <a href="index.html">Home</a>
               <a href="contact.html">Contact</a>
-              <a href="age.html">Age</a>
+              <a href="Grade.html">Grade</a>
+              <a href="qunit.html">qunit</a>
             </div>
-            <center>
+            
               <h1>Average grade </h1>
               <table>
               <tr>
@@ -153,16 +154,31 @@ background: #555;
                <tr>
                <td>
                       <div style="text-align: center;">
-                          <button id="button" >Calculate </button>
+                          <button onclick="clickCounter()" id="button" >Calculate </button>
                       </div>
+                      <p>Grade has been calculated <span id="Grade-calculated"> </span>  time(s) </p>
+                      
+
+                      <!--label>Advice: <span id="adviceField"></span></label>
+                      <button id="advice" type = "submit" class="calcButton">Advice</button-->
+
+                      
+                      
                </td>
+                     <button id="simpbutt" class="btn btn-primary">event</button>
+                       <p id="simpsons"></p>
+               <td>
+
+               </td>
+
+               
               </tr>
               </table>
-          </center>
+          
           
 </div>
 
-<h3>This calaculation taken from sololearn.com</h3>
+
 <div class="footer">
         <h2>priyanka Bodapati</h2>
       </div>
@@ -170,21 +186,5 @@ background: #555;
 </body>
 </html>
 
-<script>
-function aveargegrade() {
-         const grade1 = parseInt(document.getElementById("grade1").value);
-         const grade2 = parseInt(document.getElementById("grade2").value);
-         const grade3 = parseInt(document.getElementById("grade3").value);
-
-        let ans = (grade1 + grade2 + grade3)/3;
-        
-       
-        document.getElementById('gradeaverage').innerHTML = ans;
-        
-         
-      }
-      
-      document.getElementById('button').addEventListener('click', aveargegrade);
-
-
-</script>
+<script src="main.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
